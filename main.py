@@ -11,7 +11,7 @@ app = FastAPI()
 
 
 @app.on_event("startup")
-@repeat_every(seconds=30)
+@repeat_every(seconds=60)
 async def periodic_mysql_to_sheets_sync():
     """Automatically sync MySQL to Sheets every 30 seconds if there are changes"""
     sync_mysql_to_sheets("Sync7", settings.SPREADSHEET_ID)
