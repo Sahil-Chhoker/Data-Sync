@@ -9,6 +9,8 @@ A production-grade bidirectional synchronization system between MySQL and Google
 
 Try editing the Google Sheet and watch the changes appear in the database viewer within seconds. Or use the viewer to see how database updates reflect back in the sheet.
 
+**NOTE**: If edits don't sync immediately, the API might be spinning up (cold start). To avoid this, open the API URL in your browser first to wake it up, then start editing.
+
 ## Architecture
 
 ```
